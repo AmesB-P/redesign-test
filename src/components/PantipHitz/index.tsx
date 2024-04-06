@@ -1,11 +1,7 @@
 import CustomCard from "@/components/CustomCard";
-import Tabs from "@mui/material/Tabs";
-import {highlightData} from "@/data/highlightData";
 import React from "react";
 import {List , ListItem  , ListItemText ,ListItemAvatar ,Avatar  ,Box , IconButton} from "@mui/material";
 import ImageIcon from '@mui/icons-material/Image';
-import WorkIcon from '@mui/icons-material/Work';
-import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import CommentIcon from '@mui/icons-material/Comment';
 import Grid2 from "@mui/material/Unstable_Grid2";
 
@@ -57,7 +53,7 @@ const PantipHitz = () => {
                                         }
                                         disablePadding
                                     >
-                                        <ListItemAvatar sx={{display : {xs : "none" , sm : "flex"}}}>
+                                        <ListItemAvatar >
                                             <Avatar>
                                                 <ImageIcon />
                                             </Avatar>

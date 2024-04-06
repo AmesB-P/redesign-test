@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import {AppRouterCacheProvider} from "@mui/material-nextjs/v14-appRouter";
 import styles from "@/app/page.module.css";
-import HomePage from "@/app/HomePage/page";
 import Navbar from "@/components/Navbar";
 import {TabRoomsProvider} from "@/context/TabRoomsContext";
 import StickyFooter from "@/components/Footer";
