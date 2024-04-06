@@ -20,7 +20,6 @@ function Item({props}: { props: itemProps }) {
                     component="img"
                     height="194"
                     image={props.img}
-                    // src={props.img}
                     alt={props.title}
                 />
                 <CardContent>
@@ -39,8 +38,6 @@ const Highlight = () => {
         <CustomCard title={"Highlight"} style={{ margin : 1, maxWidth: "100%"}}>
             <Box sx={{maxWidth: "100%", marginTop: 2, bgcolor: 'background.paper'}}>
                 <Tabs
-                    // value={value}
-                    // onChange={handleChange}
                     variant="scrollable"
                     scrollButtons
                     allowScrollButtonsMobile
@@ -51,16 +48,7 @@ const Highlight = () => {
                     }
                 </Tabs>
             </Box>
-            {/*<Carousel*/}
-            {/*    navButtonsAlwaysVisible*/}
-            {/*    indicators={false}*/}
-            {/*    autoPlay={false}*/}
-            {/*    animation={"slide"}*/}
-            {/*>*/}
-            {/*    {*/}
-            {/*        highlightData.map((item , index)=> <Item key={index} props={item}/>)*/}
-            {/*    }*/}
-            {/*</Carousel>*/}
+
         </CustomCard>
     )
 }
