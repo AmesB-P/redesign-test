@@ -20,6 +20,7 @@ function TabPanel(props: TabPanelProps) {
             id={`vertical-tabpanel-${index}`}
             aria-labelledby={`vertical-tab-${index}`}
             {...other}
+            key={`tabpanel-${index}`}
         >
             {value === index && (
                 <Box sx={{ p: 3 , color : "white" }}>

@@ -43,7 +43,7 @@ const PantipRealtime = () => {
                     <Grid2 container>
                         {
                             itemList.map((item , index) => (
-                                <Grid2 xs={12} sm={6}>
+                                <Grid2 key={index} xs={12} sm={6}>
                                     <ListItem
                                         secondaryAction={
                                             <IconButton edge="end" aria-label="comments">
