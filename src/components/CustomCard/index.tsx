@@ -8,10 +8,6 @@ import CardContent from '@mui/material/CardContent';
 export default function CustomCard({children , title , style} : {children : React.ReactNode , title : string , style? : any }) {
     const [expanded, setExpanded] = React.useState(false);
 
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-    };
-
     return (
         <Card sx={style ?? { width : "80%" , maxWidth: "100%" }}>
             <CardHeader

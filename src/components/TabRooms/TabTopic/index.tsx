@@ -23,7 +23,7 @@ function TabPanel(props: TabPanelProps) {
             key={`tabpanel-${index}`}
         >
             {value === index && (
-                <Box sx={{ p: 3 , color : "white" }}>
+                <Box key={index} sx={{ p: 3 , color : "white" }}>
                     <Typography>{children}</Typography>
                 </Box>
             )}
