@@ -1,13 +1,10 @@
 "use client"
 import CustomCard from "@/components/CustomCard";
 import React from "react";
-import Carousel from 'react-material-ui-carousel'
-import {Paper, Button, Card, CardMedia, CardContent, Typography} from '@mui/material'
+import { Card, CardMedia, CardContent, Typography} from '@mui/material'
 import {highlightData} from "@/data/highlightData";
-import mockUpPic from "../../assets/img/mockUpPic.jpg"
 import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
-import {tabRooms} from "@/data/tabRooms";
 import Tab from "@mui/material/Tab";
 
 interface itemProps {
