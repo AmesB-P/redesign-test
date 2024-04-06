@@ -6,9 +6,12 @@ import Box from '@mui/material/Box';
 import {pages} from "@/data/pages";
 import Button from "@mui/material/Button";
 import {tabRooms} from "@/data/tabRooms";
+import TabTopic from "@/components/TabRooms/TabTopic";
+import {useTabRooms} from "@/hooks/useTabRooms";
 
 export default function ScrollableTabsButtonForce() {
-    const [value, setValue] = React.useState(0);
+    // const [value, setValue] = React.useState(0);
+    const {value,setValue} = useTabRooms()
 
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setValue(newValue);
@@ -33,6 +36,8 @@ export default function ScrollableTabsButtonForce() {
                     />
                 ))}
             </Tabs>
+
+            <TabTopic/>
         </Box>
     );
 }

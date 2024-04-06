@@ -1,5 +1,3 @@
-"use client"
-
 import CustomCard from "@/components/CustomCard";
 import Tabs from "@mui/material/Tabs";
 import {highlightData} from "@/data/highlightData";
@@ -29,16 +27,16 @@ const PantipPick = () => {
             username : "user 2",
             totalComment : 10
         },{
-            title : "test 1",
-            username : "user 1",
+            title : "test 3",
+            username : "user 3",
             totalComment : 10
         },{
-            title : "test 1",
-            username : "user 1",
+            title : "test 4",
+            username : "user 4",
             totalComment : 10
         },{
-            title : "test 1",
-            username : "user 1",
+            title : "test 5",
+            username : "user 5",
             totalComment : 10
         },
     ]
@@ -49,7 +47,7 @@ const PantipPick = () => {
                   <Grid2 container>
                       {
                           itemList.map((item , index) => (
-                              <Grid2 xs={12} sm={6}>
+                              <Grid2 xs={12}>
                                   <ListItem
                                       secondaryAction={
                                           <IconButton edge="end" aria-label="comments">

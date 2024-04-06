@@ -5,6 +5,7 @@ import {AppRouterCacheProvider} from "@mui/material-nextjs/v14-appRouter";
 import styles from "@/app/page.module.css";
 import HomePage from "@/app/HomePage/page";
 import Navbar from "@/components/Navbar";
+import {TabRoomsProvider} from "@/context/TabRoomsContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,12 +23,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
           <AppRouterCacheProvider>
-              <header className={styles.navbar}>
-                  <Navbar/>
-              </header>
-              <main className={styles.main}>
-                  {children}
-              </main>
+              <TabRoomsProvider>
+                  <header className={styles.navbar}>
+                      <Navbar/>
+                  </header>
+                  <main className={styles.main}>
+                      {children}
+                  </main>
+              </TabRoomsProvider>
           </AppRouterCacheProvider>
       </body>
     </html>
