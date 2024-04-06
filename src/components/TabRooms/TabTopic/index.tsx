@@ -24,7 +24,7 @@ function TabPanel(props: TabPanelProps) {
             {...other}
         >
             {value === index && (
-                <Box sx={{ p: 3 }}>
+                <Box sx={{ p: 3 , color : "white" }}>
                     <Typography>{children}</Typography>
                 </Box>
             )}
@@ -45,7 +45,7 @@ export default function TabTopic() {
 
     return (
         <Box
-            sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224 }}
+            sx={{ flexGrow: 1, bgcolor: '#2d2a49', display: 'flex', height: 500 }}
         >
             {
                 tabRooms.map((item , index) =>(
@@ -54,27 +54,6 @@ export default function TabTopic() {
                     </TabPanel>
                 ))
             }
-            {/*<TabPanel value={value} index={0}>*/}
-            {/*    Item One*/}
-            {/*</TabPanel>*/}
-            {/*<TabPanel value={value} index={1}>*/}
-            {/*    Item Two*/}
-            {/*</TabPanel>*/}
-            {/*<TabPanel value={value} index={2}>*/}
-            {/*    Item Three*/}
-            {/*</TabPanel>*/}
-            {/*<TabPanel value={value} index={3}>*/}
-            {/*    Item Four*/}
-            {/*</TabPanel>*/}
-            {/*<TabPanel value={value} index={4}>*/}
-            {/*    Item Five*/}
-            {/*</TabPanel>*/}
-            {/*<TabPanel value={value} index={5}>*/}
-            {/*    Item Six*/}
-            {/*</TabPanel>*/}
-            {/*<TabPanel value={value} index={6}>*/}
-            {/*    Item Seven*/}
-            {/*</TabPanel>*/}
         </Box>
     );
 }

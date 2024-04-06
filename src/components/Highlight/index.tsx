@@ -35,7 +35,8 @@ function Item({props}: { props: itemProps }) {
 
 const Highlight = () => {
     return (
-        <CustomCard title={"Highlight"} style={{ margin : 1, maxWidth: "100%"}}>
+        <CustomCard title={"Highlight"} style={{ margin : 1, maxWidth: "100%" , bgcolor : "background.paper"}}>
+        {/*<CustomCard title={"Highlight"} style={{ margin : 1, maxWidth: "100%" , bgcolor : "#b39ddb"}}>*/}
             <Box sx={{maxWidth: "100%", marginTop: 2, bgcolor: 'background.paper'}}>
                 <Tabs
                     variant="scrollable"

@@ -41,7 +41,7 @@ const PantipHitz = () => {
         },
     ]
     return (
-        <CustomCard style={{ margin : 1, width : { xs : "100%" ,sm : "60%"} ,maxWidth: "100%"}} title={"Pantip Hitz"}>
+        <CustomCard style={{ margin : 1, width : { xs : "100%" } ,maxWidth: "100%"}} title={"Pantip Hitz"}>
             <Box sx={{width: "100%", bgcolor: 'background.paper'}}>
                 <List sx={{maxWidth: "100%", bgcolor: 'background.paper' }}>
                     <Grid2 container>
@@ -57,10 +57,9 @@ const PantipHitz = () => {
                                         }
                                         disablePadding
                                     >
-                                        <ListItemAvatar>
+                                        <ListItemAvatar sx={{display : {xs : "none" , sm : "flex"}}}>
                                             <Avatar>
                                                 <ImageIcon />
-
                                             </Avatar>
                                         </ListItemAvatar>
                                         <ListItemText primary={item.title} secondary={item.username} />

@@ -4,14 +4,23 @@ import Highlight from "../../components/Highlight"
 import PantipPick from "@/components/PantipPick";
 import PantipHitz from "@/components/PantipHitz";
 import PantipRealtime from "@/components/PantipRealtime";
+import Grid2 from "@mui/material/Unstable_Grid2";
 
 const HomePage: FC = () => {
     return (
         <>
             <Highlight/>
-            <PantipRealtime/>
-            <PantipPick/>
-            <PantipHitz/>
+            <Grid2 container spacing={2}>
+                <Grid2 xs={12}>
+                    <PantipRealtime/>
+                </Grid2>
+                <Grid2 xs={6}>
+                    <PantipPick/>
+                </Grid2>
+                <Grid2 xs={6}>
+                    <PantipHitz/>
+                </Grid2>
+            </Grid2>
             <TabRooms/>
         </>
     )

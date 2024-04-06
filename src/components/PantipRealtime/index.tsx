@@ -41,7 +41,7 @@ const PantipRealtime = () => {
         },
     ]
     return (
-        <CustomCard style={{ margin : 1, width : { xs : "100%" ,sm : "60%"} ,maxWidth: "100%"}} title={"Pantip Realtime"}>
+        <CustomCard style={{ margin : 1, width : { xs : "100%" } ,maxWidth: "100%"}} title={"Pantip Realtime"}>
             <Box sx={{width: "100%", bgcolor: 'background.paper'}}>
                 <List sx={{maxWidth: "100%", bgcolor: 'background.paper' }}>
                     <Grid2 container>

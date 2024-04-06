@@ -6,6 +6,7 @@ import styles from "@/app/page.module.css";
 import HomePage from "@/app/HomePage/page";
 import Navbar from "@/components/Navbar";
 import {TabRoomsProvider} from "@/context/TabRoomsContext";
+import StickyFooter from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,10 @@ export default function RootLayout({
                   <main className={styles.main}>
                       {children}
                   </main>
+                  <footer className={styles.footer}>
+                      <StickyFooter/>
+                  </footer>
+
               </TabRoomsProvider>
           </AppRouterCacheProvider>
       </body>

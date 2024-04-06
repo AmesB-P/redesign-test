@@ -58,7 +58,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     transition: theme.transitions.create('width'),
     width: '100%',
     [theme.breakpoints.up('md')]: {
-      width: '20ch',
+      width: '40ch',
     },
   },
 }));
@@ -126,6 +126,16 @@ const Navbar = () => {
           open={isMobileMenuOpen}
           onClose={handleMobileMenuClose}
       >
+
+        {/*{pages.map((page) => (*/}
+        {/*    <MenuItem*/}
+        {/*        key={page}*/}
+        {/*        // onClick={handleCloseNavMenu}*/}
+        {/*        sx={{ my: 2, color: 'white', display: 'block' }}*/}
+        {/*    >*/}
+        {/*      <p>{page}</p>*/}
+        {/*    </MenuItem>*/}
+        {/*))}*/}
         <MenuItem>
           <IconButton size="large" aria-label="show 4 new mails" color="inherit">
             <Badge badgeContent={4} color="error">
@@ -165,7 +175,7 @@ const Navbar = () => {
       <>
         <CssBaseline />
         <Box sx={{ flexGrow: 1 }}>
-          <AppBar position="fixed" sx={{top : 0}}>
+          <AppBar position="fixed" sx={{top : 0 , bgcolor : "#2d2a49" ,boxShadow : "0 3px 8px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(0,0,0,.08)"}}>
             <Toolbar>
               <IconButton
                   size="large"
@@ -180,7 +190,7 @@ const Navbar = () => {
                   variant="h6"
                   noWrap
                   component="div"
-                  sx={{ display: { xs: 'none', sm: 'block' } }}
+                  sx={{ display: { xs: 'none', sm: 'block' , color : "white" } }}
               >
                 MUI
               </Typography>
@@ -226,7 +236,7 @@ const Navbar = () => {
                     aria-label="account of current user"
                     aria-controls={menuId}
                     aria-haspopup="true"
-                    // onClick={handleProfileMenuOpen}
+                    onClick={handleProfileMenuOpen}
                     color="inherit"
                 >
                   <AccountCircle />
@@ -250,15 +260,15 @@ const Navbar = () => {
                 // variant="h5"
                 noWrap
                 component="div"
-                sx={{ flexGrow: 1, display : "flex" , justifyContent : "center" , padding : 2 }}
+                sx={{ flexGrow: 1, display : "flex" , justifyContent : "center" , padding : 2 , color : "white" }}
             >
-              <Search >
+              <Search sx={{border : 2 , borderRadius : "20px"}}>
                 <SearchIconWrapper>
-                  <SearchIcon />
+                  <SearchIcon/>
                 </SearchIconWrapper>
                 <StyledInputBase
                     placeholder="Search…"
-                    inputProps={{ 'aria-label': 'search' }}
+                    inputProps={{ 'aria-label': 'search'}}
                 />
               </Search>
             </Typography>
