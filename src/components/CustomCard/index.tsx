@@ -31,7 +31,7 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
     }),
 }));
 
-export default function CustomCard({children , title} : {children : React.ReactNode , title : string}) {
+export default function CustomCard({children , title , style} : {children : React.ReactNode , title : string , style? : any }) {
     const [expanded, setExpanded] = React.useState(false);
 
     const handleExpandClick = () => {
@@ -39,7 +39,7 @@ export default function CustomCard({children , title} : {children : React.ReactN
     };
 
     return (
-        <Card sx={{ width : "80%" , maxWidth: "100%" }}>
+        <Card sx={style ?? { width : "80%" , maxWidth: "100%" }}>
             <CardHeader
                 // avatar={
                 //     <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
