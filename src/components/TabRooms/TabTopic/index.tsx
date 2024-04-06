@@ -41,7 +41,7 @@ export default function TabTopic() {
         >
             {
                 tabRooms.map((item , index) =>(
-                    <TabPanel value={value} index={index}>
+                    <TabPanel key={index} value={value} index={index}>
                         {item}
                     </TabPanel>
                 ))
